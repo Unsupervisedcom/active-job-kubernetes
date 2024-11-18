@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'kubeclient', '~> 4.0'
-  spec.add_dependency 'rails', '>= 5.0', '<7'
+  spec.add_dependency 'rails', '>= 5.0', '~>7'
 end

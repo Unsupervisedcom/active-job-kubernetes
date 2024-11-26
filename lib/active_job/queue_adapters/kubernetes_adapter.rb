@@ -21,7 +21,8 @@ module ActiveJob
       end
 
       def enqueue_at(_job, _timestamp)
-        raise NotImplementedError, 'Enqueueing jobs in the future is not supported.'
+        # Originally this was not implmented so we just enqueue now
+        self.enqueue(_job)
       end
     end
   end
